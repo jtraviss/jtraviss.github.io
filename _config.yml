@@ -7,15 +7,18 @@ aboutPage: true
 markdown: redcarpet
 highlighter: pygments
 
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
+
 paginate: 20
 baseurl: /
-domain_name: 'http://jtraviss.github.io'
+domain_name: 'http://travisbai.me'
 google_analytics: 'UA-XXXXXXXX-X'
 disqus: false
 disqus_shortname: 'your-disqus-shortname'
 
 # Details for the RSS feed generator
-url:            'http://your-blog-url.example.com'
+url:            'http://travisbai.me'
 author:         'Travis Bai'
 authorTwitter:  'travisbai'
 
