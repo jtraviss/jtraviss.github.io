@@ -1,0 +1,7 @@
+
+在公司系统中，SO行项目工厂字段一直以来都是可变更状态。最近发现几单SO工厂无法进行变更，即进入VA02字段显示为无法编辑状态。首先确认未在屏幕中对此字段进行过客户化，随即怀疑是否是需求传递后，PO存在异常。但检查后，发现PO状态一切正常。GOOGLE后也未发现有价值线索，到这里已毫无头绪。随即使用DEBUG大法修理VA02，功夫不负有心人，终于发现VA02标准程序中检查KDST若存在此SO的Order Bom会将工厂字段设置为不允许修改。当然还有其他逻辑，详情请参考[此处][r1]。原因找到后告知到PP一侧同事与用户，并了解设置原因后，删除掉Order Bom解决此问题。
+
+为什么Order Bom设置后不允许修改工厂字段呢？我认为Order Bom是与工厂强相关的，若修改SO中Main Item的工厂字段后，会导致BOM展开后组件的不一致。
+
+[r1]:http://scn.sap.com/community/erp/sd/sales/blog/2014/09/05/debugging-tips--plant-at-sales-bom-header
+
