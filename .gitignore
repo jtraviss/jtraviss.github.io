@@ -1,3 +1,4 @@
 _site/
 Gemfile*
 *.sh
+.DS_Store
