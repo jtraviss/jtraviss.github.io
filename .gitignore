@@ -1,4 +1,5 @@
 _site/
+imgs/
 Gemfile*
 *.sh
 .DS_Store
