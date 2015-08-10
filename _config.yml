@@ -12,13 +12,13 @@ redcarpet:
 
 paginate: 20
 baseurl: /
-domain_name: 'http://travisbai.me'
-google_analytics: 'UA-XXXXXXXX-X'
-disqus: false
-disqus_shortname: 'your-disqus-shortname'
+domain_name: 'http://www.travisbai.me'
+google_analytics: 'UA-66074546-1'
+disqus: true
+disqus_shortname: 'travisbaiblog'
 
 # Details for the RSS feed generator
-url:            'http://travisbai.me'
+url:            'http://www.travisbai.me'
 author:         'Travis Bai'
 authorTwitter:  'travisbai'
 
