@@ -44,7 +44,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* Spacing */
 .post h1, h3, h4, h5, p, .post-body ul, #post-list li, pre {
-margin-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+/* add by travis 20150810*/
+#post-body ul, ol {
+	margin-bottom: 20px;
 }
 
 /* Base */
@@ -182,8 +187,14 @@ a,
 	transition: all 0.15s ease;
 }
 
-ul 	{ margin:0; padding:0; }
-li	{ list-style-type:circle; list-style-position:inside; }
+/*ul 	{ margin:0; padding:0; }*/
+ul li	{ list-style-type:circle; list-style-position:inside; }
+
+/*add by travis 20150810*/
+/*ol {margin:0; padding:0;}*/
+ol li {list-style-type:1; list-style-position:inside;}
+
+li {  text-indent: -1em; padding-left: 1em;}
 
 /* Line Height */
 #post-body, p { line-height:1.7; }
